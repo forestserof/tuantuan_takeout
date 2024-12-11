@@ -1,0 +1,39 @@
+/* 设置表格样式 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* 设置表头样式 */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+/* 设置表格单元格样式 */
+td {
+  padding: 8px;
+}
+
+/* 设置奇数行的背景色 */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* 设置鼠标悬停时的样式 */
+tr:hover {
+  background-color: #e5e5e5;
+}
+
+/* 设置操作链接样式 */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

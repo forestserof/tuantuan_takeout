@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>团团外卖</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background-image: url("../background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form method=post id="register-form" action="../php/insert.php">
+      <h2>注册</h2>
+      <div class="form-group">
+        <label for="role">身份</label>
+        <select id="role" name="type" required>
+          <option value="">请选择身份</option>
+          <option value="商家">商家</option>
+          <option value="客户">客户</option>
+          <option value="骑手">骑手</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="username" id="username-label">用户名/店名</label>
+        <input type="text" id="username" name="name" required>
+      </div>
+
+      <div class="form-group" id="address-group">
+        <label for="address">地址</label>
+        <input type="text" id="address" name="address">
+      </div>       
+
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">确认密码</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span class="error-message" id="password-error"></span>
+      </div>
+      
+      <button type="submit">注册</button>
+      <button type="reset">重置</button>
+      <p>已经有账号了？<a href="登录.html">立即登录</a></p>
+    </form>
+  </div>
+  <script src="../js/zcscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>团团外卖</title>
+  <link rel="stylesheet" href="../css/style.css" >
+  <style>
+    body {
+      background-image: url("../background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .artistic-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6em;
+  color: #99f0e6;
+  text-shadow: 
+    2px 2px 0 #ffc0c0, 
+    -2px -2px 0 #ffc0c0, 
+    2px -2px 0 #ffc0c0, 
+    -2px 2px 0 #ffc0c0, 
+    2px 0 0 #ffc0c0, 
+    0 2px 0 #ffc0c0, 
+    -2px 0 0 #ffc0c0, 
+    0 -2px 0 #ffc0c0;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* styles.css */
+
+a.hover-effect {
+    transition: all 0.3s ease; /* 添加过渡效果，使变化平滑 */
+    color: #333; /* 默认颜色 */
+    font-size: 1em; /* 默认字体大小 */
+}
+
+a.hover-effect:hover {
+    color: #999; /* 悬停时的颜色，比默认颜色浅 */
+    font-size: 1.1em; /* 悬停时的字体大小，比默认大小略大 */
+}
+button {
+  background-color: #ffc0c0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff3373;
+}
+
+form{
+  background-color: #f1e2e2;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <center>
+      <h1 class="artistic-text">团团外卖</h1>
+  </header>
+  </center>
+  <div class="container">
+    <form method=post id="login-form" action="../php/login.php">
+      <h2 >登录</h2>
+      <div class="form-group">
+        <label for="role">身份</label>
+        <select id="role" name="type" required>
+          <option value="">请选择身份</option>
+          <option value="商家">商家</option>
+          <option value="客户">客户</option>
+          <option value="骑手">骑手</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="username" id="username-label">用户名/店名</label>
+        <input type="text" id="username" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <button type="submit">登录</button>
+      <p>还没有账号？<a href="注册.html">立即注册</a></p>
+        
+    </form>
+  </div>
+  <script src="../js/dlscript.js"></script>
+</body>
+</html>
